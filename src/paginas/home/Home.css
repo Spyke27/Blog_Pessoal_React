@@ -1,5 +1,6 @@
 .caixa{
-    background-color: #EF911F;
+   /*  background-color: #EF911F; */
+    background-image: linear-gradient(#ae5701, #EF911F);
 }
 .btn-post{
     border: none !important;

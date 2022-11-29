@@ -12,14 +12,16 @@ function Navbar() {
         <Toolbar variant="dense" className="bar">
           <Box className="logo">
             <Typography variant="h5" color="inherit">
-              BlogPessoal
+              <strong>B</strong>log<strong>P</strong>essoal
+              <div className="uuu"></div>
             </Typography>
+            
           </Box>
 
           <Box display="flex" justifyContent="start">
             <Box className="btn-home" mx={1}>
               <Typography variant="h6" color="inherit">
-                Home
+                Home 
               </Typography>
             </Box>
             

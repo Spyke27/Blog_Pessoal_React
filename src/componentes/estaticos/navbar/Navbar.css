@@ -4,6 +4,16 @@
     background-color: #2D2B1E;
     padding: 8px;
 }
+strong{
+    color: #EF911F;
+}
+.uuu{
+    width: 85px;
+    height: 3px;
+    background-color: #306E67;
+    margin-left: 50px;
+    margin-top: -5px;
+}
 .logo{
     cursor: pointer;
 }
