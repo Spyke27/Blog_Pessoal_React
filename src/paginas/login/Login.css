@@ -1,7 +1,10 @@
 .textos1{
     font-weight: bold !important;
  }
- 
+ .cadastro{
+    color: #a55b00;
+    cursor: pointer;
+ }
  .imagem{
      background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
      background-repeat: no-repeat;
@@ -12,6 +15,7 @@
  }
  .botao{
     background-color: #C06D08 !important;
+    color: white !important;
  }
  .botao:hover{
     background-color: #a55b00 !important;

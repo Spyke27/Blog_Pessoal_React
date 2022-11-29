@@ -10,16 +10,19 @@
 .pointer{
     cursor: pointer;
     transition: 0.2s all ease-in-out;
+    border-bottom: #2D2B1E solid 1.5px;
 }
 .pointer:hover{
-    color: #c6c6c6;
+    border-bottom: #EF911F solid 1.5px;
 }
 .btn-home{
     padding: 1px 12px;
     border: none;
     border-radius: 2px;
-    background-color: #EF911F;
+    background-color: #306E67;
     border: none;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
 }
 .btn-home:hover{
     color: #2D2B1E;

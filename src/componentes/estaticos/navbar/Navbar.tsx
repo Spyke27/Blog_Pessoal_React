@@ -16,7 +16,7 @@ function Navbar() {
           </Box>
 
           <Box display="flex" justifyContent="start">
-            <Box className="btn-home pointer" mx={1}>
+            <Box className="btn-home" mx={1}>
               <Typography variant="h6" color="inherit">
                 home
               </Typography>

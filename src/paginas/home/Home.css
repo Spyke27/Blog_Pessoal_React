@@ -1,9 +1,9 @@
 .caixa{
     background-color: #EF911F;
 }
-.botao{
+.botao2{
     border-color: white !important;
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
 }
 .titulo{
    color: #2D2B1E !important;
