@@ -10,7 +10,13 @@
      background-size: cover;
      background-position: center;
  }
- 
+ .botao{
+    background-color: #C06D08 !important;
+ }
+ .botao:hover{
+    background-color: #a55b00 !important;
+    color: white !important;
+ }
  .text-decorator-none{
      text-decoration: none;
  }
