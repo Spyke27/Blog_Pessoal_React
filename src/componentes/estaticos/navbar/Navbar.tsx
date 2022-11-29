@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 function Navbar() {
   return (
@@ -18,38 +19,38 @@ function Navbar() {
           <Box display="flex" justifyContent="start">
             <Box className="btn-home" mx={1}>
               <Typography variant="h6" color="inherit">
-                home
+                Home
               </Typography>
             </Box>
             
-            <Box className="pointer" mx={1}>
+            <Box className="pointer menuu" mx={1}>
               <Typography variant="h6" color="inherit">
-                postagens
+                Postagens
               </Typography>
             </Box>
 
-            <div className='separador'></div>
+            
 
-            <Box className="pointer" mx={1}>
+            <Box className="pointer menuu" mx={1}>
               <Typography variant="h6" color="inherit">
-                temas
+                Temas
               </Typography>
             </Box>
 
-            <div className='separador'></div>
+            
 
-            <Box className="pointer" mx={1}>
+            <Box className="pointer menuu" mx={1}>
               <Typography variant="h6" color="inherit">
-                cadastrar tema
+                Cadastrar Tema
               </Typography>
             </Box>
             
-            <div className='separador'></div>
+            
 
-            <Box className="pointer" mx={1}>
+            <Box className="pointer menuu" mx={1}>
               <Link to='/login' className="decoration-none">
               <Typography variant="h6" color="inherit">
-                logout
+                Logout    
               </Typography>
               </Link>
             </Box>

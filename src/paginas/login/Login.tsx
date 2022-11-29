@@ -1,7 +1,7 @@
 import { Button, Grid, TextField, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
-import React, { ChangeEvent, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { ChangeEvent, useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
 import UserLogin from '../../models/UserLogin';
 import { login } from '../../services/Service';
@@ -11,7 +11,7 @@ function Login(){
     /* A maior parte dos hooks precisam de uma variavel para acessar o seu valor e uma função para modificar os seus dados */
 
     // constante para pegar e modificar, useState precisa indicar qual dado pegar
-
+    const navigate = useNavigate()
     const [token, setToken] = useLocalStorage('token')
     const [userLogin, setUserLogin] = useState<UserLogin>({
         id: 0,
@@ -26,6 +26,11 @@ function Login(){
             [e.target.name]: e.target.value
         })
     }
+    useEffect(()=> {
+        if(token != ''){
+            navigate('/home')
+        }
+    }, [token])
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>){
         e.preventDefault()
@@ -81,3 +86,28 @@ export default Login;
 function preventDefault() {
     throw new Error('Function not implemented.');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Rodrigo Daniel */

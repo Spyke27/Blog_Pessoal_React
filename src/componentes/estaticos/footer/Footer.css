@@ -7,9 +7,11 @@
     height: 60px;
 }
 .redes{
-    color: white;
+    color: #e3e3e3;
     font-size: 60px !important;
-
+}
+.contate-se{
+    color: #e3e3e3;
 }
 .redes:hover{
     transform: scale(1.1);
@@ -17,4 +19,7 @@
 }
 .textos{
     color: white;
+}
+.decoration_none{
+    text-decoration: none;
 }

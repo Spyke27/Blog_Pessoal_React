@@ -1,9 +1,14 @@
 .caixa{
     background-color: #EF911F;
 }
-.botao2{
-    border-color: white !important;
-    color: rgb(0, 0, 0) !important;
+.btn-post{
+    border: none !important;
+    color: white!important;
+    background-color: #306E67 !important;
+}
+.btn-post:hover{
+    background-color: #3e8b82 !important;
+    
 }
 .titulo{
    color: #2D2B1E !important;
