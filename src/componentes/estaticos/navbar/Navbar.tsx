@@ -1,6 +1,7 @@
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -46,9 +47,11 @@ function Navbar() {
             <div className='separador'></div>
 
             <Box className="pointer" mx={1}>
+              <Link to='/login' className="decoration-none">
               <Typography variant="h6" color="inherit">
                 logout
               </Typography>
+              </Link>
             </Box>
           </Box>
         </Toolbar>
