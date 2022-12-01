@@ -1,6 +1,6 @@
 .caixa{
    /*  background-color: #EF911F; */
-    background-image: linear-gradient(#ae5701, #EF911F);
+    background-color: #fba43a;
 }
 .btn-post{
     border: none !important;
@@ -12,7 +12,7 @@
     
 }
 .titulo{
-   color: #2D2B1E !important;
+   color: #222 !important;
    font-weight: bold !important;
 }
 .postagens{

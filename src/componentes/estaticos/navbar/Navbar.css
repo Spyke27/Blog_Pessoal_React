@@ -1,7 +1,7 @@
 .bar{
     display: flex;
     justify-content: space-between;
-    background-color: #2D2B1E;
+    background-color: #222;
     padding: 8px;
 }
 strong{
@@ -20,7 +20,7 @@ strong{
 .pointer{
     cursor: pointer;
     transition: 0.2s all ease-in-out;
-    border-bottom: #2D2B1E solid 1.5px;
+    border-bottom: #222 solid 1.5px;
 }
 .pointer:hover{
     border-bottom: #EF911F solid 1.5px;

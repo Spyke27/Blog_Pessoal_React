@@ -3,6 +3,7 @@ import './Home.css';
 import {Button, Grid} from '@material-ui/core';
 import Box from '@mui/material/Box';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import TabPostagem from '../../componentes/postagens/tabPostagem/TabPostagem';
 
 function Home(){
    return (
@@ -23,6 +24,7 @@ function Home(){
                     <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
+                <TabPostagem />
                 </Grid>
             </Grid>
     </>

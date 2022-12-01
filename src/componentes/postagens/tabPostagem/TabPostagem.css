@@ -1,0 +1,17 @@
+.titulo{
+    font-weight: bold;
+ }
+ .tabs{
+    background-color: #333 !important;
+ }
+ .tab:hover{
+   background-color: #444;
+ }
+ .tabPanel{
+    background-color: #fff;
+ }
+ .boxTab{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

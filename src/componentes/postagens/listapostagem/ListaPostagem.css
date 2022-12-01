@@ -1,0 +1,29 @@
+.text-decorator-none{
+    text-decoration: none;
+}
+.cardUp{
+    background-color: #fff;
+}
+.cardDown{
+    background-color: #fff;
+}
+.btnCard{
+    display: flex;
+    justify-content: center;
+}
+.btnAtualizar{
+    background-color: #464E57 !important;
+    color: #21dc2a !important;
+    font-weight: bold !important;
+}
+.btnDeletar{
+    background-color: #464E57 !important;
+    color: #ce3934 !important;
+    font-weight: bold !important;
+}
+.btnAtualizar:hover, .btnDeletar:hover{
+    background-color: #414549 !important;
+}
+.aa{
+    color: #333 !important;
+}
