@@ -2,6 +2,9 @@
    /*  background-color: #EF911F; */
     background-color: #fba43a;
 }
+.decoration{
+    text-decoration: none;
+}
 .btn-post{
     border: none !important;
     color: white!important;

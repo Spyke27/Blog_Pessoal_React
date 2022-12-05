@@ -58,12 +58,7 @@ function ListaTema() {
                   className="text-decorator-none"
                 >
                   <Box mx={1}>
-                    <Button
-                      variant="contained"
-                      className="marginLeft"
-                      size="small"
-                      color="primary"
-                    >
+                    <Button  variant="contained" className="btnAtualizarTema marginLeft" size="small" color="primary">
                       atualizar
                     </Button>
                   </Box>
@@ -73,7 +68,7 @@ function ListaTema() {
                   className="text-decorator-none"
                 >
                   <Box mx={1}>
-                    <Button variant="contained" size="small" color="secondary">
+                    <Button className="btnDeletarTema" variant="contained" size="small" color="secondary">
                       deletar
                     </Button>
                   </Box>

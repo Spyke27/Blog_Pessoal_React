@@ -42,8 +42,8 @@ function ListaPostagem() {
     <>
       {posts.map((post) => (
         <Box m={2}>
-          <Card >
-            <CardContent className="cardUp aa">
+          <Card className="bb">
+            <CardContent>
               <Typography color="textSecondary" gutterBottom>
                 Postagens
               </Typography>
@@ -57,7 +57,7 @@ function ListaPostagem() {
                 {post.tema?.descricao}
               </Typography>
             </CardContent>
-            <CardActions className="cardDown">
+            <CardActions>
               <Box className="btnCard" mb={1.5}>
                 <Link
                   to={`/formularioPostagem/${post.id}`}

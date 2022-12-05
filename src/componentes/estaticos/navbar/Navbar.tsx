@@ -1,11 +1,20 @@
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import LogoutIcon from '@mui/icons-material/Logout';
+import useLocalStorage from "react-use-localstorage";
 
 function Navbar() {
+
+  const [token, setToken] = useLocalStorage('token');
+  const navigate = useNavigate()
+
+  function goLogout(){
+    setToken('');
+    navigate('/login')
+  }
+
   return (
     <>
       <AppBar position="static">
@@ -20,41 +29,45 @@ function Navbar() {
 
           <Box display="flex" justifyContent="start">
             <Box className="btn-home" mx={1}>
-              <Typography variant="h6" color="inherit">
-                Home 
-              </Typography>
-            </Box>
-            
-            <Box className="pointer menuu" mx={1}>
-              <Typography variant="h6" color="inherit">
-                Postagens
-              </Typography>
-            </Box>
-
-            
-
-            <Box className="pointer menuu" mx={1}>
-              <Typography variant="h6" color="inherit">
-                Temas
-              </Typography>
-            </Box>
-
-            
-
-            <Box className="pointer menuu" mx={1}>
-              <Typography variant="h6" color="inherit">
-                Cadastrar Tema
-              </Typography>
-            </Box>
-            
-            
-
-            <Box className="pointer menuu" mx={1}>
-              <Link to='/login' className="decoration-none">
-              <Typography variant="h6" color="inherit">
-                Logout    
-              </Typography>
+              <Link className="decoration-none" to="/home">
+                <Typography variant="h6">
+                  Home 
+                </Typography>
               </Link>
+            </Box>
+            
+            <Box className="pointer menuu" mx={1}>
+            <Link className="decoration-none" to="/posts">
+                <Typography variant="h6">
+                  Postagens 
+                </Typography>
+              </Link>
+            </Box>
+
+            
+
+            <Box className="pointer menuu" mx={1}>
+            <Link className="decoration-none" to="/temas">
+                <Typography variant="h6">
+                  Temas 
+                </Typography>
+              </Link>
+            </Box>
+
+            
+
+            <Box className="pointer menuu" mx={1}>
+            <Link className="decoration-none" to="/cadastrarTema">
+                <Typography variant="h6">
+                  Cadastrar Tema 
+                </Typography>
+              </Link>
+            </Box>
+            
+            <Box onClick={goLogout} className="pointer menuu" mx={1}>
+              <Typography variant="h6">
+                Logout
+              </Typography>
             </Box>
           </Box>
         </Toolbar>

@@ -3,7 +3,8 @@ import './Home.css';
 import {Button, Grid} from '@material-ui/core';
 import Box from '@mui/material/Box';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
-import TabPostagem from '../../componentes/postagens/tabPostagem/TabPostagem';
+import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem';
+import { Link } from 'react-router-dom';
 
 function Home(){
    return (
@@ -17,7 +18,9 @@ function Home(){
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
-                        <Button variant='outlined' className='btn-post'>Ver Postagens</Button>
+                        <Link to='/posts' className='decoration-none'>
+                        <Button  variant='outlined' className='btn-post'>Ver Postagens</Button>
+                        </Link>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >

@@ -1,12 +1,6 @@
 .text-decorator-none{
     text-decoration: none;
 }
-.cardUp{
-    background-color: #fff;
-}
-.cardDown{
-    background-color: #fff;
-}
 .btnCard{
     display: flex;
     justify-content: center;

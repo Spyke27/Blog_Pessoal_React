@@ -14,10 +14,8 @@ function Login(){
     const navigate = useNavigate()
     const [token, setToken] = useLocalStorage('token')
     const [userLogin, setUserLogin] = useState<UserLogin>({
-        id: 0,
         usuario: '',
-        senha: '',
-        token: ''
+        senha: ''
     })
 
     function updateModel(e: ChangeEvent<HTMLInputElement>){
@@ -36,7 +34,7 @@ function Login(){
         e.preventDefault()
 
         try{
-            await login('/usuarios/logar', userLogin, setToken)
+            await login('/auth/logar', userLogin, setToken)
             alert('Login efetuado com sucesso!')
         }catch(error){
             alert('Usuario não encontrado!')
@@ -72,7 +70,9 @@ function Login(){
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
                         </Box>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='textos1 cadastro'>Cadastre-se</Typography>
+                           <Link to='/cadastro' className='text-decorator-none'>
+                           <Typography variant='subtitle1' gutterBottom align='center' className='textos1 cadastro'>Cadastre-se</Typography>
+                           </Link>
                     </Box>
                 </Box>
             </Grid>
