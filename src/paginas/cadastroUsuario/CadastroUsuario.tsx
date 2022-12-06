@@ -139,3 +139,49 @@ function CadastroUsuario() {
 }
 
 export default CadastroUsuario;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desenvolvido por: */
+/* Rodrigo Daniel */
