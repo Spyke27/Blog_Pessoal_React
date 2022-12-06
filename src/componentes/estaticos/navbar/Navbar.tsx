@@ -57,7 +57,7 @@ function Navbar() {
             
 
             <Box className="pointer menuu" mx={1}>
-            <Link className="decoration-none" to="/cadastrarTema">
+            <Link className="decoration-none" to="/formularioTema">
                 <Typography variant="h6">
                   Cadastrar Tema 
                 </Typography>

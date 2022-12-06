@@ -1,3 +1,14 @@
 .topo{
     margin-top: 20px;
 }
+.container{
+    padding: 30px;
+    min-height: 60vh;
+}
+.btnFinalizar{
+    background-color: #519E95 !important;
+    color: #e3e3e3 !important;
+}
+.btnFinalizar:hover{
+    background-color: #327b72 !important;
+}

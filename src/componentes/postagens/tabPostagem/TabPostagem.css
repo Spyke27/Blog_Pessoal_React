@@ -2,16 +2,20 @@
     font-weight: bold;
  }
  .tabs{
-    background-color: #333 !important;
+    background-color: #222 !important;
  }
  .tab:hover{
-   background-color: #444;
+   background-color: #333;
  }
  .tabPanel{
-    background-color: #fff;
+    background-color: #333;
  }
  .boxTab{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.sobreNos{
+   background-color: #333;
+   color: white !important;
 }
