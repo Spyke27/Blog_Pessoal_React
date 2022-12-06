@@ -5,6 +5,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Tema from '../../../models/Tema';
 import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../models/Postagem';
+import { busca, buscaId, post, put } from '../../../services/Service';
+
 
 function CadastroPost() {
 
@@ -99,22 +101,33 @@ function CadastroPost() {
         navigate('/posts')
     }
 
-    
- 
     return (
         <Container maxWidth="sm" className="topo">
-            <form >
+            <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" > Postagem</Typography>
-                <TextField id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
-                <TextField id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
+
+                <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
+
+                <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl >
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
-                        id="demo-simple-select-helper">
+                        id="demo-simple-select-helper"
+                        onChange={(e) => buscaId(`/tema/${e.target.value}`, setTema, {
+                            headers: {
+                                'Authorization': token
+                            }
+                        })}>
+                        {
+                            temas.map(tema => (
+                                <MenuItem value={tema.id}>{tema.descricao}</MenuItem>
+                            ))
+                        }
                     </Select>
-                    <FormHelperText>Escolha um tema para a postagem</FormHelperText>
+
+                    <FormHelperText>Selecione um tema para a postagem</FormHelperText>
                     <Button type="submit" variant="contained" color="primary">
                         Finalizar
                     </Button>
