@@ -42,10 +42,13 @@ function ListaPostagem() {
     <>
       {posts.map((post) => (
         <Box m={2}>
-          <Card className="bb">
+          <Card className="boxCard">
             <CardContent>
-              <Typography color="textSecondary" gutterBottom>
+             <Typography color="textSecondary" gutterBottom>
                 Postagens
+              </Typography>
+              <Typography variant="body2" component="p">
+                {post.tema?.descricao}
               </Typography>
               <Typography variant="h5" component="h2">
                 {post.titulo}
@@ -53,9 +56,7 @@ function ListaPostagem() {
               <Typography variant="body2" component="p">
                 {post.texto}
               </Typography>
-              <Typography variant="body2" component="p">
-                {post.tema?.descricao}
-              </Typography>
+             
             </CardContent>
             <CardActions>
               <Box className="btnCard" mb={1.5}>
