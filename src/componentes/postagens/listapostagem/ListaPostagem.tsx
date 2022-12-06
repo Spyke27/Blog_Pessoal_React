@@ -41,12 +41,12 @@ function ListaPostagem() {
   return (
     <>
       {posts.map((post) => (
-        <Box m={2}>
+        <Box m={2} className="boxCards">
           <Card className="boxCard">
             <CardContent>
-             <Typography color="textSecondary" gutterBottom>
+             {/* <Typography color="textSecondary" gutterBottom>
                 Postagens
-              </Typography>
+              </Typography> */}
               <Typography variant="body2" component="p">
                 {post.tema?.descricao}
               </Typography>
