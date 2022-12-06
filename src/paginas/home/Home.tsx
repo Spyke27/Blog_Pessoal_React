@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem';
 import { Link } from 'react-router-dom';
+import ModalPostagem from '../../componentes/postagens/modalPostagem/ModalPostagem';
 
 function Home(){
    return (
@@ -17,6 +18,7 @@ function Home(){
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
+                            <ModalPostagem />
                         </Box>
                         <Link to='/posts' className='decoration-none'>
                         <Button  variant='outlined' className='btn-post'>Ver Postagens</Button>

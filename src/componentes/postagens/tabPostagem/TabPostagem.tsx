@@ -94,3 +94,38 @@ function TabPostagem() {
   );
 }
 export default TabPostagem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desenvolvido por: */
+/* Rodrigo Daniel */
