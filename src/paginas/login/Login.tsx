@@ -1,10 +1,11 @@
 import { Button, Grid, TextField, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import React, { ChangeEvent, useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import UserLogin from '../../models/UserLogin';
 import { login } from '../../services/Service';
+import { addToken } from '../../store/tokens/action';
 import './Login.css';
 
 function Login(){
@@ -12,7 +13,8 @@ function Login(){
 
     // constante para pegar e modificar, useState precisa indicar qual dado pegar
     const navigate = useNavigate()
-    const [token, setToken] = useLocalStorage('token')
+    const dispatch = useDispatch()
+    const [token, setToken] = useState('')
     const [userLogin, setUserLogin] = useState<UserLogin>({
         usuario: '',
         senha: ''
@@ -26,6 +28,7 @@ function Login(){
     }
     useEffect(()=> {
         if(token != ''){
+            dispatch(addToken(token))
             navigate('/home')
         }
     }, [token])
@@ -35,7 +38,6 @@ function Login(){
 
         try{
             await login('/auth/logar', userLogin, setToken)
-            alert('Login efetuado com sucesso!')
         }catch(error){
             alert('Usuario não encontrado!')
         }
