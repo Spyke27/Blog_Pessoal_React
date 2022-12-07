@@ -1,11 +1,11 @@
 import React from 'react'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
-import {Button } from "@material-ui/core"
-import {Box} from '@mui/material';
+import {Button} from "@material-ui/core"
 import CloseIcon from '@material-ui/icons/Close';
 import './ModalPostagem.css';
 import CadastroPost from '../cadastroPost/CadastroPost';
+import {Box} from '@mui/material';
 
 
 function getModalStyle() {
@@ -60,6 +60,7 @@ function ModalPostagem () {
   return (
     <div>
       <Button
+        variant="outlined"
         className="btnModal"
         onClick={handleOpen}>Nova Postagem</Button>
       <Modal
@@ -74,66 +75,3 @@ function ModalPostagem () {
   );
 }
 export default ModalPostagem
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Desenvolvido por: */
-/* Rodrigo Daniel */

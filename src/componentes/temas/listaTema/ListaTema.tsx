@@ -10,7 +10,6 @@ import {
 import { Box } from "@mui/material";
 import Tema from "../../../models/Tema";
 import "./ListaTema.css";
-import useLocalStorage from "react-use-localstorage";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import TokenState from "../../../store/tokens/tokenReducer";
