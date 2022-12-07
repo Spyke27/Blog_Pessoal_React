@@ -26,6 +26,7 @@ function Login(){
             [e.target.name]: e.target.value
         })
     }
+    
     useEffect(()=> {
         if(token != ''){
             dispatch(addToken(token))
