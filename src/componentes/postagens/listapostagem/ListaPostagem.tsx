@@ -20,6 +20,7 @@ function ListaPostagem() {
 
   useEffect(() => {
     if (token == "") {
+
       toast.warn('Você Precisa Estar Logado!', {
         position: "top-center",
         autoClose: 3000,
@@ -30,6 +31,7 @@ function ListaPostagem() {
         progress: undefined,
         theme: "dark",
         });
+        
       navigate("/login");
     }
   }, [token]);

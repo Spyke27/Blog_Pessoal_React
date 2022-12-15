@@ -32,11 +32,15 @@ function Navbar() {
       });
 
   }
+  const linkmenu = document.querySelector('.menuu');
+  const menuBox = document.querySelector('Box');
+
 
   var navbarComponent
 
   if(token !== ''){
-    navbarComponent = <AppBar position="static">
+    navbarComponent = 
+    <AppBar position="static">
     <Toolbar variant="dense" className="bar">
       <Box className="logo">
         <Typography variant="h5" color="inherit">
