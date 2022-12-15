@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
+import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText, Box } from "@material-ui/core"
 import './CadastroPost.css';
 import { useNavigate, useParams } from 'react-router-dom';
 import Tema from '../../../models/Tema';
@@ -124,8 +124,9 @@ function CadastroPost() {
     }
 
     return (
-        <Container maxWidth="sm" className="topo">
-            <form onSubmit={onSubmit}>
+    <div className="topo containerNovaPostagem">
+        <Container maxWidth="sm" >
+            <form onSubmit={onSubmit} className="formPostagem">
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" > Postagem</Typography>
 
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
@@ -136,6 +137,7 @@ function CadastroPost() {
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
                     
                     <Select
+                    className='select'
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
                         onChange={(e) => buscaId(`/tema/${e.target.value}`, setTema, {
@@ -149,14 +151,16 @@ function CadastroPost() {
                             ))
                         }
                     </Select>
-
-                    <FormHelperText>Selecione um tema para a postagem</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
-                        Finalizar
-                    </Button>
                 </FormControl>
+                <FormHelperText>Selecione um tema para a postagem</FormHelperText>
+                    <Box className="boxEnviar">
+                    <Button className='btnPostar' type="submit" variant="contained" color="primary">
+                        Enviar 
+                    </Button>
+                    </Box>
             </form>
         </Container>
+    </div>
     )
 }
 export default CadastroPost;

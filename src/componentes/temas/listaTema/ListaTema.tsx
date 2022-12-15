@@ -82,6 +82,7 @@ function ListaTema() {
           </Card>
         </Box>
       ))}
+      {/* <NewTema/> */}
       </div>
     </>
   );

@@ -2,3 +2,27 @@
     margin-top: 20px;
     padding: 30px;
 }
+.containerNovaPostagem{
+    background-color: #222;
+    margin-top: 0px !important;
+}
+.formPostagem{
+    background-color: #fff !important;
+    border: solid 1px #ccc !important;
+    border-radius: 5px;
+    padding: 30px;
+}
+.select{
+    width: 100px;
+    margin-bottom: 5px;
+}
+.boxEnviar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.btnPostar{
+    background-color: #306E67 !important;
+    width: 150px;
+    margin-top: 20px !important;
+}

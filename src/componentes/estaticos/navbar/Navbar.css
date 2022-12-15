@@ -3,11 +3,7 @@
     justify-content: space-between;
     background-color: #222;
     padding: 8px;
-}
-.ativar{
-    border-bottom: #EF911F solid 1.5px;
-    color: #fff !important;
-}
+}   
 strong{
     color: #EF911F;
 }

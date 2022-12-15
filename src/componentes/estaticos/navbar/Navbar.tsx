@@ -32,9 +32,7 @@ function Navbar() {
       });
 
   }
-  const linkmenu = document.querySelector('.menuu');
-  const menuBox = document.querySelector('Box');
-
+  const linkmenu = document.querySelector('.menuu')
 
   var navbarComponent
 
