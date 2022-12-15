@@ -1,6 +1,11 @@
 .text-decorator-none{
     text-decoration: none;
 }
+.postagens{
+    background-color: #333 !important;
+    min-height: 100vh;
+    padding-top: 30px;
+}
 .btnCard{
     display: flex;
     justify-content: center;

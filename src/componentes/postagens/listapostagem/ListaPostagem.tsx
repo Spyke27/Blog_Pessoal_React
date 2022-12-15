@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import TokenState from "../../../store/tokens/tokenReducer";
 import { ClassNames } from "@emotion/react";
+import { toast } from "react-toastify";
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([]);
@@ -19,7 +20,16 @@ function ListaPostagem() {
 
   useEffect(() => {
     if (token == "") {
-      alert("Você precisa estar logado!");
+      toast.warn('Você Precisa Estar Logado!', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
       navigate("/login");
     }
   }, [token]);
@@ -39,6 +49,7 @@ function ListaPostagem() {
 
   return (
     <>
+      <div className="postagens">     
       {posts.map((post) => (
         <Box className="boxCards">
           <Card className="boxCard">
@@ -84,6 +95,7 @@ function ListaPostagem() {
           </Card>
         </Box>
       ))}
+      </div>
     </>
   );
 }

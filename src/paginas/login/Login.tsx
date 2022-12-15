@@ -3,6 +3,7 @@ import { Box } from '@mui/material';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import UserLogin from '../../models/UserLogin';
 import { login } from '../../services/Service';
 import { addToken } from '../../store/tokens/action';
@@ -39,8 +40,29 @@ function Login(){
 
         try{
             await login('/auth/logar', userLogin, setToken)
+
+            toast.success('Usuário Logado!', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                });
+
         }catch(error){
-            alert('Usuario não encontrado!')
+            toast.error('Usuario Não Encontrado!', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                });
         }
     }
 

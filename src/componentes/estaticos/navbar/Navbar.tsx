@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { addToken } from "../../../store/tokens/action";
 import TokenState from "../../../store/tokens/tokenReducer";
 import "./Navbar.css";
@@ -18,6 +19,18 @@ function Navbar() {
   function goLogout(){
     dispatch(addToken(''));
     navigate('/login')
+
+    toast.info('Deslogado com Sucesso!', {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
+
   }
 
   var navbarComponent

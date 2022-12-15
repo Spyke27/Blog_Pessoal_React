@@ -43,9 +43,10 @@ function ListaTema() {
 
   return (
     <>
+      <div className="fundo">
       {temas.map((tema) => (
         <Box m={2}>
-          <Card className="cardTema" variant="outlined">
+          <Card className="cardTemaa" variant="outlined">
             <CardContent>
               <Typography color="inherit" gutterBottom>
                 Tema
@@ -81,6 +82,7 @@ function ListaTema() {
           </Card>
         </Box>
       ))}
+      </div>
     </>
   );
 }
