@@ -3,12 +3,12 @@ import './Home.css';
 import {Button, Grid} from '@material-ui/core';
 import Box from '@mui/material/Box';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
-import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem';
 import { Link, useNavigate } from 'react-router-dom';
 import ModalPostagem from '../../componentes/postagens/modalPostagem/ModalPostagem';
 import { useSelector } from 'react-redux';
 import TokenState from '../../store/tokens/tokenReducer';
 import { toast } from 'react-toastify';
+import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem';
 
 function Home(){
 
