@@ -16,6 +16,10 @@ strong{
 }
 .logo{
     cursor: pointer;
+    color: #fff;
+}
+.linkLogo{
+    text-decoration: none;
 }
 .pointer{
     cursor: pointer;
@@ -52,3 +56,4 @@ strong{
     text-decoration: none;
     color: inherit;
 }
+

@@ -20,7 +20,7 @@ function Navbar() {
     dispatch(addToken(''));
     navigate('/login')
 
-    toast.info('Deslogado com Sucesso!', {
+    toast.info('Usuario Deslogado!', {
       position: "top-center",
       autoClose: 3000,
       hideProgressBar: false,
@@ -40,13 +40,14 @@ function Navbar() {
     navbarComponent = 
     <AppBar position="static">
     <Toolbar variant="dense" className="bar">
+      <Link to='/home' className="linkLogo">
       <Box className="logo">
-        <Typography variant="h5" color="inherit">
+        <Typography variant="h5">
           <strong>B</strong>log<strong>P</strong>essoal
           <div className="uuu"></div>
         </Typography>
-        
       </Box>
+      </Link>
 
       <Box display="flex" justifyContent="start">
         <Box className="btn-home" mx={1}>

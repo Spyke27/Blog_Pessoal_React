@@ -13,12 +13,14 @@
 
 .btnCancelar{
     margin-right: 20px !important;
+    border: #d6591b 2px solid !important;
     background-color: #d6591b !important;
     color: #e3e3e3 !important;
 }
 .btnCancelar:hover{
     margin-right: 20px !important;
     background-color: #b84810 !important;
+    border: #b84810 2px solid !important;
     color: white !important;
 }
 .btn-cadastrar{

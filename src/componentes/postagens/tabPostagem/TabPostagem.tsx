@@ -46,7 +46,7 @@ function TabPostagem() {
           >
             <span></span>
             <p>Olá, eu me chamo Rodrigo!</p>
-            <p>Este é meu blog pessoal, criado no bootcamp da Generation como um dos meus projetos finais, integrando o Backend -NestJs-, onde está o banco de dados -Postgre-, com o Front -React-.</p>
+            <p>Este é meu blog pessoal, criado no bootcamp da Generation como um dos meus projetos finais, integrando o Backend (NestJs), onde está o banco de dados (Postgre), com o Front (React).</p>
             <p>Projeto 100% funcional com todas as requisições e CRUD, efetuando corretamente a integração entre as tecnologias citadas. </p>
             <p>Sinta-se à vontade para testar e interagir, cadastrando temas e fazendo novas postagens nesta pequena comunidade! 😄</p>
           </Typography>
