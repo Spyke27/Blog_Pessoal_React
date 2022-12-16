@@ -28,7 +28,7 @@ function Footer(){
                         <a href="https://www.facebook.com/generationbrasil" target="_blank">
                             <FacebookIcon className='redes' />
                         </a>
-                        <a href="https://www.instagram.com/generationbrasil/" target="_blank">
+                        <a href="https://www.instagram.com/rodrigodaniel_27/" target="_blank">
                             <InstagramIcon className='redes' />
                         </a>
                         <a href="https://www.linkedin.com/in/rodrigo-daniell/" target="_blank">
