@@ -19,6 +19,25 @@
 .sobreNos{
    background-color: #333;
    color: white !important;
+   display: flex;
+   margin-top: 20px;
+}
+.sobreNos span{
+   display: block;
+   height: 4px;
+   width: 150px;
+   background-color: #FBA43A;
+   border-radius: 2px;
+   margin-top: -15px;
+}
+.sobreNosLeft img {
+   width: 500px;
+   height: 500px;
+   margin-top: -55px;
+}
+.sobreNosRight p{
+   font-size: 23px;
+   line-height: 23px;
 }
 .hw{
    text-align: center;

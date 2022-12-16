@@ -1,3 +1,50 @@
 .topo{
     margin-top: 20px;
 }
+.containerDeletarPostagem{
+    background-color: #e3e3e3 !important;
+    color: #e3e3e3 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin: 0 !important;
+    padding: 30px;
+}
+.cardDeletarPostagem{
+    background-color: #333 !important;
+    color: #e3e3e3 !important; 
+    height: 160px; 
+    width: 250px;
+    margin-bottom: 30px;
+}
+.cardDeletePostagemTitulo{
+    color: #aaa;
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: -8px !important;
+}
+.btnSim,
+.btnNao{
+    background-color: #333 !important;
+    border: solid 1px #ccc !important;
+    color: #e3e3e3 !important;
+    border-radius: 3px;
+}
+.btnSim:hover,
+.btnNao:hover{
+    color: #333 !important;
+    background-color: #e3e3e3 !important;
+}
+.atencaoDelete{
+    display: block;
+    color: #333;
+    font-size: 23px;
+    text-align: center;
+}

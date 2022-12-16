@@ -20,7 +20,16 @@ function DeletarPostagem() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+          toast.info('Você Precisa Estar Logado!', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
             navigate("/login")
     
         }
@@ -65,34 +74,37 @@ function DeletarPostagem() {
    
   return (
     <>
-      <Box m={2}>
-        <Card variant="outlined" >
+      <Box m={2} className="containerDeletarPostagem">
+        <Card variant="outlined" className="cardDeletarPostagem">
           <CardContent>
             <Box justifyContent="center">
-              <Typography color="textSecondary" gutterBottom>
-                Deseja deletar a Postagem:
+              <Typography gutterBottom>
+                Deseja Deletar a Postagem:
               </Typography>
-              <Typography color="textSecondary" >
-              {post?.titulo}
+              <Typography className='cardDeletePostagemTitulo'>
+              ➡️ #{post?.titulo}
               </Typography>
             </Box>
 
           </CardContent>
           <CardActions>
-            <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
+            <Box className="botoes" ml={1.0} mb={2} >
               <Box mx={2}>
-              <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+              <Button onClick={sim} variant="contained" className="btnSim" size='large'>
                 Sim
               </Button>
               </Box>
               <Box>
-              <Button onClick={nao} variant="contained" size='large' color="secondary">
+              <Button  className="btnNao" onClick={nao} variant="contained" size='large'>
                 Não
               </Button>
               </Box>
             </Box>
           </CardActions>
         </Card>
+        <Typography className='atencaoDelete'>
+        ⚠️ Atenção! Está é uma ação destrutiva e irreversível.
+        </Typography>
       </Box>
     </>
   );

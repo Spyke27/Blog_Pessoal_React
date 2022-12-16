@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import { TabContext, TabPanel } from "@material-ui/lab";
 import ListaPostagem from "../listapostagem/ListaPostagem";
 import "./TabPostagem.css";
+import Image from "./image.png";
 
 function TabPostagem() {
   const [value, setValue] = useState("1");
@@ -25,8 +26,12 @@ function TabPostagem() {
           </Box>
         </TabPanel>
         <TabPanel value="2" className="sobreNos">
-          <Typography
-            variant="h5"
+        <Box className="sobreNosLeft">
+            <img src={Image} alt="Imagem Lateral" />
+         </Box>
+         <Box className="sobreNosRight">
+         <Typography
+            variant="h4"
             gutterBottom
             component="h5"
             align="center"
@@ -39,8 +44,13 @@ function TabPostagem() {
             gutterBottom
             align="justify"
           >
-            
+            <span></span>
+            <p>Olá, eu me chamo Rodrigo!</p>
+            <p>Este é meu blog pessoal, criado no bootcamp da Generation como um dos meus projetos finais, integrando o Backend -NestJs-, onde está o banco de dados -Postgre-, com o Front -React-.</p>
+            <p>Projeto 100% funcional com todas as requisições e CRUD, efetuando corretamente a integração entre as tecnologias citadas. </p>
+            <p>Sinta-se à vontade para testar e interagir, cadastrando temas e fazendo novas postagens nesta pequena comunidade! 😄</p>
           </Typography>
+         </Box>
         </TabPanel>
       </TabContext>
     </>

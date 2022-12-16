@@ -74,33 +74,36 @@ function DeletarTema() {
           
   return (
     <>
-      <Box m={2}>
-        <Card variant="outlined">
+      <Box m={2} className="containerDeletarTema">
+        <Card variant="outlined" className='cardDeletarTema'>
           <CardContent>
             <Box justifyContent="center">
-              <Typography color="textSecondary" gutterBottom>
+              <Typography  gutterBottom>
                 Deseja deletar o Tema:
               </Typography>
-              <Typography color="textSecondary">
-                {tema?.descricao}
+              <Typography className='cardDeleteTemaTitulo'>
+              ➡️ #{tema?.descricao}
               </Typography>
             </Box>
           </CardContent>
           <CardActions>
-            <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
+            <Box className='botoes' ml={1.0} mb={2}>
               <Box mx={2}>
-                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+                <Button onClick={sim} variant="contained" className="btnSim" size='large'>
                   Sim
                 </Button>
               </Box>
               <Box mx={2}>
-                <Button  onClick={nao} variant="contained" size='large' color="secondary">
+                <Button className="btnNao" onClick={nao} variant="contained" size='large'>
                   Não
                 </Button>
               </Box>
             </Box>
           </CardActions>
         </Card>
+        <Typography className='atencaoDelete'>
+        ⚠️ Atenção! Está é uma ação destrutiva e irreversível.
+        </Typography>
       </Box>
     </>
   );
