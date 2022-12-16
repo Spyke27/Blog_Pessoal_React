@@ -7,6 +7,7 @@ import { buscaId, deleteId } from '../../../services/Service';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useSelector } from "react-redux";
 import TokenState from "../../../store/tokens/tokenReducer";
+import { toast } from 'react-toastify';
 
 function DeletarPostagem() {
 
@@ -46,7 +47,16 @@ function DeletarPostagem() {
                 'Authorization': token
               }
             });
-            alert('Postagem deletada com sucesso');
+            toast.success('Postagem Deletada!', {
+              position: "top-center",
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              });
           }
         
           function nao() {

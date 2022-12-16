@@ -6,6 +6,7 @@ import { Grid, Typography, Button, TextField } from "@material-ui/core";
 import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./CadastroUsuario.css";
+import { toast } from "react-toastify";
 
 function CadastroUsuario() {
   let navigate = useNavigate();
@@ -49,14 +50,39 @@ function CadastroUsuario() {
     try{
       if (confirmarSenha == user.senha) {
         await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult);
-        alert("Usuario cadastrado com sucesso");
+        toast.success('Novo Usuario Cadastrado!', {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
       } else {
-        alert(
-          "Dados inconsistentes. Favor verificar as informações de cadastro."
-        );
+        toast.warn('Dados incorretos!', {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
       }
   }catch(error){
-      alert('Dados incorretos!')
+    toast.error('Verifique as Informações!', {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
   }
 
   }
