@@ -8,7 +8,7 @@ import ModalPostagem from '../../componentes/postagens/modalPostagem/ModalPostag
 import { useSelector } from 'react-redux';
 import TokenState from '../../store/tokens/tokenReducer';
 import { toast } from 'react-toastify';
-import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem';
+import TabPostagem from '../../componentes/postagens/tabPostagem/TabPostagem';
 
 function Home(){
 
