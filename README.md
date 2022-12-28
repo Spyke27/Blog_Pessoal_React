@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-<!-- Usar isto para comentários -->
+<!-- Usar isto para comentários... -->
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
