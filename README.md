@@ -1,4 +1,4 @@
-<h1 align="center">Blog Pessaol</h1>
+<h1 align="center">Blog Pessoal</h1>
 
 ## 🚀 Tecnologias Utilizadas 
 <ul>
