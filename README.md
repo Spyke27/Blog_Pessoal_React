@@ -10,7 +10,7 @@
 
 ## Projeto
 
-- Um blog pessoal, onde usuarios podem expressar suas opniões através de posts, que ficarão vizivés para outros usurios, assim como ele também poderar vizualizar postagens já feitas.
+- Um blog pessoal, onde usuarios podem expressar suas opniões através de posts, que ficarão visivés para outros usuarios, assim como ele também poderá vizualizar postagens já feitas.
 
 ## Características:
 <ul>
