@@ -65,6 +65,18 @@ function Login(){
                 });
         }
     }
+    function alert(){
+        toast.warn('Aguardando resposta da API...', {
+                position: "top-center",
+                autoClose: 60000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                });
+    }
 
     return(
         <>
@@ -85,7 +97,7 @@ function Login(){
                          id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password'fullWidth />
                         <Box marginTop={2} textAlign='center'>
 
-                            <Button type='submit' variant='contained' className='botao'>
+                            <Button onClick={alert} type='submit' variant='contained' className='botao'>
                                     Logar
                             </Button>
                             
