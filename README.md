@@ -1,6 +1,7 @@
 <h1 align="center">Blog Pessoal</h1>
 
 ## 🚀 Tecnologias Utilizadas 
+
 <ul>
     <li>ReactJS</li>
     <li>NestJS</li>
